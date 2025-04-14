@@ -10,11 +10,25 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  console.log(count);
+  
+  const increment = () => {
+    setCount(count + 1)
+  }
+  const decrement = () => {
+    // setCount(count - 1)
+    if(count > 0) {
+      setCount(count - 1)
+    }
+  }
 
   return (
     <>
       <div>
-        text
+        <h1>Current Counter</h1>
+        <button onClick={increment}>+</button>
+        <button onClick={decrement}>-</button>
+        {count}
       </div>
     </>
   )
