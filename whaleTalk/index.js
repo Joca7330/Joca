@@ -26,3 +26,5 @@ for (let inputIndex = 0; inputIndex < input.length; inputIndex++) {
 // Convert the resultArr to a string and uppercase
 const resultString = resultArray.join('').toUpperCase();
 console.log(resultString);
+
+
